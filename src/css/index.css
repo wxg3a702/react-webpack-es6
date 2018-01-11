@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+}
+
+.h1 {
+    color: #797979;
+    padding: 5px 0;
+}
+
+.button {
+    background-color: aliceblue;
+    border-radius: 0.3em;
+}
