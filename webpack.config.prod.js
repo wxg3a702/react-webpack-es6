@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
@@ -13,7 +14,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Webpack测试",
             template: './public/index.html', //指定模板路径
             filename: 'index.html', //指定文件名
         }),

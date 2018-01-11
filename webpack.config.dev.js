@@ -11,7 +11,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Webpack测试",
             template: './public/index.html', //指定模板路径
             filename: 'index.html', //指定文件名
         }),
