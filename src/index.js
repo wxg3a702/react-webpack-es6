@@ -12,7 +12,7 @@ class App extends Component {
 
     onChange = () => {
         this.setState({
-            message: Math.random(),
+            message: Math.ceil((Math.random() * 10))
         })
     };
 

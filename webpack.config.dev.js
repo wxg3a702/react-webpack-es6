@@ -51,5 +51,6 @@ module.exports = {
     devServer: {
         contentBase: path.resolve(__dirname, 'build'),
         hot: true,
+        port: 3003    //监听的Server端口
     },
 };

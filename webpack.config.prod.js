@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -19,7 +18,9 @@ module.exports = {
         }),
         new ExtractTextWebpackPlugin("bundle.css"),
         new CleanWebpackPlugin(['build']),
-        new UglifyJSPlugin(),
+        new UglifyJSPlugin({
+            sourceMap: true
+        }),
     ],
     module: {
         rules: [ //配置加载器
