@@ -19,8 +19,15 @@ class App extends Component {
     render() {
         return (
             <div className='container'>
-                <h1 className='h1'>{this.state.message}</h1>
-                <button className='button' onClick={this.onChange}>cilck me</button>
+                <div className="spinner"/>
+                <div className="loading2" >
+                    <div className="line1"/>
+                    <div className="line2"/>
+                    <div className="line3"/>
+                    <div className="line4"/>
+                    <div className="line5"/>
+                </div>
+                <div className="fanye" />
             </div>
         );
     }
